@@ -1,0 +1,3 @@
+enum GoogleAuthType{
+  signIn,signUp
+}

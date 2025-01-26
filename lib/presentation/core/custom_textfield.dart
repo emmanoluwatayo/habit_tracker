@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:personal_finance_tracker/core/constants/app_colors.dart';
-import 'package:personal_finance_tracker/core/shared/validators/email_validator.dart';
-import 'package:personal_finance_tracker/core/shared/validators/phone_number_validator.dart';
-import 'package:personal_finance_tracker/core/shared/validators/str_min_length_validator.dart';
-import 'package:personal_finance_tracker/core/theme/font_manager.dart';
-import 'package:personal_finance_tracker/core/theme/styles_manager.dart';
-import 'package:personal_finance_tracker/core/theme/values_manager.dart';
-import 'package:personal_finance_tracker/presentation/application/authentication/enum/input_enum.dart';
+import 'package:habit_tracker/core/constants/app_colors.dart';
+import 'package:habit_tracker/core/shared/validators/email_validator.dart';
+import 'package:habit_tracker/core/shared/validators/phone_number_validator.dart';
+import 'package:habit_tracker/core/shared/validators/str_min_length_validator.dart';
+import 'package:habit_tracker/core/theme/font_manager.dart';
+import 'package:habit_tracker/core/theme/styles_manager.dart';
+import 'package:habit_tracker/core/theme/values_manager.dart';
+import 'package:habit_tracker/presentation/application/authentication/enum/input_enum.dart';
 
 class CustomTextfield extends StatelessWidget {
   final TextEditingController textController;
@@ -29,7 +29,9 @@ class CustomTextfield extends StatelessWidget {
       inputFormatters: const [],
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(AppSize.s4),
+          borderRadius: BorderRadius.circular(
+            AppSize.s4,
+          ),
           borderSide: const BorderSide(
             color: AppColors.inventoryTextfieldBorderColor,
           ),

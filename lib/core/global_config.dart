@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:habit_tracker/application/services/shared_prefs_storage_services.dart';
 import 'package:habit_tracker/core/dependency_injectables/injection.dart';
+import 'package:habit_tracker/firebase_options.dart';
 import 'package:injectable/injectable.dart';
 
 

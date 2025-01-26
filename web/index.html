@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -24,10 +25,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="habit_tracker">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="habit_tracker_logo.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="habit_tracker_logo.png" />
 
   <title>habit_tracker</title>
   <link rel="manifest" href="manifest.json">
@@ -36,21 +37,23 @@
     const serviceWorkerVersion = null;
   </script>
   <!-- This script adds the flutter initialization JS code -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIQ2KZQ3PBc_rl3HIl7hv6INHNk_mTIss&libraries=places" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIQ2KZQ3PBc_rl3HIl7hv6INHNk_mTIss&libraries=places"
+    async defer></script>
   <script src="flutter.js" defer></script>
-  <link rel="icon" type="image/png" href="assets/images/finLogo.png" />
-  <link rel="apple-touch-icon" href="assets/images/finLogo.png" />
+  <link rel="icon" type="image/png" href="assets/images/habit_tracker_logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/habit_tracker_logo.png" />
 </head>
+
 <body>
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }
@@ -59,5 +62,5 @@
 
   </script>
 </body>
-</html>
 
+</html>

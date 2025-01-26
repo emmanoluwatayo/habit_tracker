@@ -1,5 +1,5 @@
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:personal_finance_tracker/core/constants/app_colors.dart';
+import 'package:habit_tracker/core/constants/app_colors.dart';
 import '../../../core/shared/enums/status.dart';
 
 toastInfo({

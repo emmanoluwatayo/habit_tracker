@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,6 +9,7 @@ import 'package:habit_tracker/application/routes/app_routes_config.dart';
 import 'package:habit_tracker/core/app_bloc_proiders/app_bloc_providers.dart';
 import 'package:habit_tracker/core/constants/app_colors.dart';
 import 'package:habit_tracker/core/theme/app_theme.dart';
+import 'package:habit_tracker/presentation/core/unsupported_screen.dart';
 import 'package:loader_overlay/loader_overlay.dart';
 
 class AppWidget extends StatelessWidget {
@@ -40,7 +43,7 @@ class AppWidget extends StatelessWidget {
             designSize: const Size(375, 812),
             child: MaterialApp.router(
               debugShowCheckedModeBanner: false,
-              title: 'Finance Tracker',
+              title: 'Habit Tracker',
               theme: getTheme(),
               routerConfig: AppRouteConfig.router,
               builder: (context, child) {
@@ -50,8 +53,8 @@ class AppWidget extends StatelessWidget {
                       children: [
                         child!,
                         if (constraints.maxWidth < 900)
-                          Positioned.fill(
-                            child: Container(),
+                          const Positioned.fill(
+                            child: UnSupportedScreen(),
                           ),
                       ],
                     );
@@ -63,23 +66,5 @@ class AppWidget extends StatelessWidget {
         ),
       ),
     );
-
-    // MultiBlocProvider(
-    //   providers: AppBlocProviders.allBlocProviders,
-    //   child: ScreenUtilInit(
-    //     designSize: const Size(375, 812),
-    //     child: MaterialApp.router(
-    //       title: 'Finance Tracker',
-    //       debugShowCheckedModeBanner: false,
-    //       theme: ThemeData(
-    //         colorScheme: ColorScheme.fromSeed(
-    //           seedColor: Colors.deepPurple,
-    //         ),
-    //         useMaterial3: true,
-    //       ),
-    //       routerConfig: AppRouteConfig.router,
-    //     ),
-    //   ),
-    // );
   }
 }

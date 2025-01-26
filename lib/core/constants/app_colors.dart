@@ -36,6 +36,8 @@ class AppColors {
 
   static Color infoColor = const Color(0xFF2F80ED);
 
+  static Color darkRedColor = const Color(0xFF8B0000);
+
   static Color errorColor = const Color(0xFFEA5757);
 
   static Color successColor = const Color(0xFF27AE60);

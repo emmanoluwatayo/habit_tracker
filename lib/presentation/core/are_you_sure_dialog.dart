@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personal_finance_tracker/core/constants/app_colors.dart';
-import 'package:personal_finance_tracker/core/theme/font_manager.dart';
-import 'package:personal_finance_tracker/core/theme/styles_manager.dart';
+import 'package:habit_tracker/core/constants/app_colors.dart';
+import 'package:habit_tracker/core/theme/font_manager.dart';
+import 'package:habit_tracker/core/theme/styles_manager.dart';
 
 Future<void> areYouSureDialog({
   required String title,
@@ -40,7 +40,9 @@ Future<void> areYouSureDialog({
             padding: const EdgeInsets.symmetric(horizontal: 5),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(5),
-              side: BorderSide(color: AppColors.errorColor),
+              side: BorderSide(
+                color: AppColors.errorColor,
+              ),
             ),
             backgroundColor: Colors.white,
             elevation: 0,

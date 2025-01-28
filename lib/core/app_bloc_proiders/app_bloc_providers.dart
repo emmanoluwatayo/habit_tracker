@@ -7,6 +7,7 @@ import 'package:habit_tracker/application/bloc/authentication/profile/profile_bl
 import 'package:habit_tracker/application/bloc/authentication/registration/registration_bloc.dart';
 import 'package:habit_tracker/application/bloc/counter_bloc/counter_bloc.dart';
 import 'package:habit_tracker/application/bloc/habits/habits_bloc.dart';
+import 'package:habit_tracker/application/bloc/theme/theme_bloc.dart';
 import 'package:habit_tracker/core/dependency_injectables/injection.dart';
 
 class AppBlocProviders {
@@ -19,5 +20,6 @@ class AppBlocProviders {
         BlocProvider(create: (_) => getIt<ForgotPasswordBloc>()),
         BlocProvider(create: (_) => getIt<LoginBloc>()),
         BlocProvider(create: (_) => getIt<HabitsBloc>()),
+        BlocProvider(create: (_) => ThemeBloc()),
       ];
 }

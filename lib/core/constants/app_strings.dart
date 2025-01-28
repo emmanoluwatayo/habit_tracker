@@ -41,6 +41,8 @@ class AppStrings {
 
   static const String ISFEMALE = 'ISFEMALE';
 
+  
+
   static const String FREE_ACCOUNT_TYPE = 'Free';
 
   static const String LITE_PLAN = 'Lite Plan';
